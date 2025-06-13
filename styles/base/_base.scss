@@ -92,3 +92,67 @@ nav{
         padding: 2px 0px;
     }
 }
+.resultat{
+    position: fixed;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    right: 2rem;
+    bottom: 0;
+    width: 25rem;
+    transition: all 0.5s ease-in-out;
+    .card{
+        .card-title{
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            background-color: #34043a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .card-detail{
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+            h2{
+                font-size: 1rem;
+            }
+            h3{
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
+            .card-left{
+                margin-right: auto;
+            }
+            &:hover{
+                background-color: #f1e4f5;
+            }
+            .delete{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .card-sum{
+            // display: none;
+            margin: 1rem 0;
+            input{
+                width: 3rem;
+            }
+            padding: 0 2rem;
+            &>div{
+                display: flex;
+                justify-content: end;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+.selected{
+    background-color: #edc6fb;
+    border: 1px solid #bb00ff !important;
+}
